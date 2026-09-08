@@ -1,0 +1,23 @@
+name: Repository checks
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate release package
+        run: python code/validation/validate_release.py
+      - name: Compile Python sources
+        run: python -m compileall -q code
+      - name: Run dependency-free regression tests
+        run: python -m unittest discover -s code/validation -p "test_*.py" -v

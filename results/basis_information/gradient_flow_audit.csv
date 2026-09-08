@@ -1,0 +1,4 @@
+seed,parameter_group,parameter_tensors,gradient_tensors_present,gradient_l1_norm,continuous_requires_grad,binary_requires_grad
+42,conv,4,0,0.0,True,False
+42,fc,2,0,0.0,True,False
+42,post_threshold_head,2,2,8.983760833740234,True,False

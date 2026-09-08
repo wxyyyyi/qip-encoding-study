@@ -1,0 +1,7 @@
+dataset,seed,checkpoint,max_abs_feature_parameter_drift,mean_of_layer_max_abs_drifts
+mnist,42,basis encoding\best_Basis_model.pth,0.0,0.0
+mnist,123,basis encoding\best_Basis_model_seed_123.pth,0.0,0.0
+mnist,456,basis encoding\best_Basis_model_seed_456.pth,0.0,0.0
+fashion,42,fashion-MNIST\basis\best_Basis.pth,0.0,0.0
+fashion,123,fashion-MNIST\basis\best_Basis_fmnist_model_seed_123.pth,0.0,0.0
+fashion,456,fashion-MNIST\basis\best_Basis_fmnist_model_seed_456.pth,0.0,0.0

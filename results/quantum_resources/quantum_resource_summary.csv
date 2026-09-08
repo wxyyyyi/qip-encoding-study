@@ -1,0 +1,7 @@
+encoding,input_features_per_branch,single_qubit_gates_per_branch,two_qubit_gates_per_branch,cnot_gates_per_branch,total_gates_per_branch,depth_per_branch,total_gates_four_branches,cnot_gates_four_branches,parallel_depth_16_qubits,sequential_branch_executions_4_qubits,quantum_trainable_parameters_per_branch,quantum_trainable_parameters_four_branches,decomposed_gate_types,counting_convention
+Amplitude,16,46,36,36,82,64,328,144,64,4,16,64,CNOT:36; RX:8; RY:15; RZ:23,generic_dense_real_upper_bound
+Angle,4,20,8,8,28,13,112,32,13,4,16,64,CNOT:8; RX:8; RY:4; RZ:8,fixed_circuit_structure
+IQP-All,4,30,20,20,50,28,200,80,28,4,16,64,CNOT:20; Hadamard:4; RX:8; RZ:18,fixed_circuit_structure
+IQP-NN,4,27,14,14,41,22,164,56,22,4,16,64,CNOT:14; Hadamard:4; RX:8; RZ:15,fixed_circuit_structure
+Basis-STE,4,20,8,8,28,13,112,32,13,4,16,64,CNOT:8; RX:12; RZ:8,fixed_circuit_structure
+Basis-Hard,4,18,8,8,26,13,104,32,13,4,16,64,CNOT:8; PauliX:2; RX:8; RZ:8,representative_0101

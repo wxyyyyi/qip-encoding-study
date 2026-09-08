@@ -1,0 +1,13 @@
+dataset,seed,budget,epochs,best_epoch,best_epoch_at_last_two,best_validation_accuracy,final_test_accuracy,final_test_f1,post_best_max_validation_drop_pp,checkpoint
+fashion,42,fixed,25,25,True,0.6145,0.61575,0.6029144139963123,0.0,paper_analysis\results\basis_ste\fashion\seed_42\best_validation_model.pth
+fashion,42,extended,40,25,False,0.6145,0.61575,0.6029144139963123,47.10000000000001,paper_analysis\results\basis_ste_extended\fashion\seed_42\best_validation_model.pth
+fashion,123,fixed,25,11,False,0.5145,0.515,0.4935279976113411,33.4,paper_analysis\results\basis_ste\fashion\seed_123\best_validation_model.pth
+fashion,123,extended,40,11,False,0.5145,0.515,0.4935279976113411,33.4,paper_analysis\results\basis_ste_extended\fashion\seed_123\best_validation_model.pth
+fashion,456,fixed,25,13,False,0.6655,0.665125,0.6525957528533055,52.849999999999994,paper_analysis\results\basis_ste\fashion\seed_456\best_validation_model.pth
+fashion,456,extended,40,13,False,0.6655,0.665125,0.6525957528533055,52.849999999999994,paper_analysis\results\basis_ste_extended\fashion\seed_456\best_validation_model.pth
+mnist,42,fixed,10,10,True,0.5805,0.585125,0.5700155931153164,0.0,paper_analysis\results\basis_ste\mnist\seed_42\best_validation_model.pth
+mnist,42,extended,30,16,False,0.75,0.799125,0.7889425084752666,49.8,paper_analysis\results\basis_ste_extended_mnist30\mnist\seed_42\best_validation_model.pth
+mnist,123,fixed,10,8,False,0.3965,0.402125,0.334801140595276,4.2500000000000036,paper_analysis\results\basis_ste\mnist\seed_123\best_validation_model.pth
+mnist,123,extended,30,19,False,0.8355,0.87225,0.8714449811721946,52.55000000000001,paper_analysis\results\basis_ste_extended_mnist30\mnist\seed_123\best_validation_model.pth
+mnist,456,fixed,10,10,True,0.4875,0.517125,0.4865719105792888,0.0,paper_analysis\results\basis_ste\mnist\seed_456\best_validation_model.pth
+mnist,456,extended,30,30,True,0.627,0.616,0.6146619050048415,0.0,paper_analysis\results\basis_ste_extended_mnist30\mnist\seed_456\best_validation_model.pth

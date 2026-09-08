@@ -1,0 +1,14 @@
+encoding,section,total_gates,single_qubit_gates,two_qubit_gates,cnot_gates,depth,gate_types,global_phases_ignored
+amplitude,encoding_only,58,30,28,28,52,CNOT:28; RY:15; RZ:15,1
+amplitude,full_branch,82,46,36,36,64,CNOT:36; RX:8; RY:15; RZ:23,1
+angle,encoding_only,4,4,0,0,1,RY:4,0
+angle,full_branch,28,20,8,8,13,CNOT:8; RX:8; RY:4; RZ:8,0
+iqp-all,encoding_only,26,14,12,12,17,CNOT:12; Hadamard:4; RZ:10,0
+iqp-all,full_branch,50,30,20,20,28,CNOT:20; Hadamard:4; RX:8; RZ:18,0
+iqp,encoding_only,17,11,6,6,11,CNOT:6; Hadamard:4; RZ:7,0
+iqp,full_branch,41,27,14,14,22,CNOT:14; Hadamard:4; RX:8; RZ:15,0
+basis-ste,encoding_only,4,4,0,0,1,RX:4,0
+basis-ste,full_branch,28,20,8,8,13,CNOT:8; RX:12; RZ:8,0
+basis,encoding_only,2,2,0,0,1,PauliX:2,0
+basis,full_branch,26,18,8,8,13,CNOT:8; PauliX:2; RX:8; RZ:8,0
+shared,ansatz_only,24,16,8,8,12,CNOT:8; RX:8; RZ:8,0

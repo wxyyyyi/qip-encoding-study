@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+title: "Reproducibility package for Quantum Data Encoding Trade-offs in Parallel Hybrid Image Classification"
+version: 1.0.0
+date-released: 2026-09-08
+type: software
+message: "Please cite the associated manuscript and the archived repository release."
+repository-code: "https://github.com/wxyyyyi/qip-encoding-study"
+authors:
+  - family-names: Wen
+    given-names: Jun-Yu
+  - family-names: Hu
+    given-names: Wen-Wen
+  - family-names: Jiang
+    given-names: She-Xiang
+  - family-names: Ye
+    given-names: Wei

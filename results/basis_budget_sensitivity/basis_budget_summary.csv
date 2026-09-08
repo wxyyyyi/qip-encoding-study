@@ -1,0 +1,3 @@
+dataset,fixed_epochs,extended_epochs,fixed_accuracy_mean,fixed_accuracy_sd,extended_accuracy_mean,extended_accuracy_sd,paired_improvement_mean_pp,extended_best_epochs,extended_boundary_seeds,extended_post_best_drop_mean_pp
+mnist,10,30,0.5014583333333333,0.09250045044935366,0.7624583333333333,0.1320013218052506,26.099999999999994,16/19/30,1,34.11666666666667
+fashion,25,40,0.598625,0.07651358131077121,0.598625,0.07651358131077121,0.0,25/11/13,0,44.449999999999996

@@ -1,0 +1,10 @@
+model,conv_parameters,feature_projection_parameters,quantum_trainable_parameters,classifier_parameters,total_trainable_parameters,quantum_input_features
+Amplitude,4800,100416,64,170,105450,64
+Angle,4800,25104,64,170,30138,16
+IQP-All,4800,25104,64,170,30138,16
+IQP-NN,4800,25104,64,170,30138,16
+Basis-STE,4800,25104,64,170,30138,16
+Basis-Hard,4800,25104,64,170,30138,16
+ClassicCNN,4800,0,0,15690,20490,0
+BottleneckMLP-16,4800,25104,0,442,30346,16
+BottleneckMLP-64,4800,100416,0,1210,106426,64

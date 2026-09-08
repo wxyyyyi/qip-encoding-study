@@ -1,0 +1,19 @@
+{
+  "dataset": "mnist",
+  "model": "BottleneckMLP-16",
+  "bottleneck_dim": 16,
+  "seed": 42,
+  "epochs": 10,
+  "train_samples": 10000,
+  "validation_samples": 2000,
+  "parameter_count": 30346,
+  "selection_policy": "best_validation_accuracy",
+  "best_epoch": 10,
+  "best_validation_accuracy": 0.971,
+  "accuracy": 0.971,
+  "precision": 0.9715143787765361,
+  "recall": 0.971,
+  "f1": 0.971046699228946,
+  "elapsed_seconds": 30.316904067993164,
+  "checkpoint": "paper_analysis\\results\\baselines_validation_selected\\mnist\\bottleneck_16\\seed_42\\best_validation_model.pth"
+}

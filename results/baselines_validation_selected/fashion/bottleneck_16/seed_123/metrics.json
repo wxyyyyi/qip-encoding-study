@@ -1,0 +1,19 @@
+{
+  "dataset": "fashion",
+  "model": "BottleneckMLP-16",
+  "bottleneck_dim": 16,
+  "seed": 123,
+  "epochs": 25,
+  "train_samples": 10000,
+  "validation_samples": 2000,
+  "parameter_count": 30346,
+  "selection_policy": "best_validation_accuracy",
+  "best_epoch": 23,
+  "best_validation_accuracy": 0.8915,
+  "accuracy": 0.8915,
+  "precision": 0.8960154234637325,
+  "recall": 0.8915,
+  "f1": 0.8928508701707555,
+  "elapsed_seconds": 78.58684492111206,
+  "checkpoint": "paper_analysis\\results\\baselines_validation_selected\\fashion\\bottleneck_16\\seed_123\\best_validation_model.pth"
+}

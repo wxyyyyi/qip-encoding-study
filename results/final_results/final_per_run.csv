@@ -1,0 +1,55 @@
+dataset,model,seed,selection_policy,validation_accuracy,final_test_accuracy,final_test_precision,final_test_recall,final_test_f1,final_test_samples,final_test_evaluations,checkpoint
+fashion,amplitude,42,validation_accuracy,0.891,0.878875,0.8797047163595849,0.878875,0.8789181762970925,8000,1,fashion-MNIST\amplitude\best_Amplitude_model.pth
+fashion,amplitude,123,validation_accuracy,0.8975,0.8815,0.8812062242703645,0.8815,0.88090136013913,8000,1,fashion-MNIST\amplitude\best_Amplitude_fmnist_model_seed_123.pth
+fashion,amplitude,456,validation_accuracy,0.898,0.883375,0.8830761677920089,0.883375,0.8829476205112105,8000,1,fashion-MNIST\amplitude\best_Amplitude_fmnist_model_seed_456.pth
+fashion,angle,42,validation_accuracy,0.8935,0.884625,0.8846483885798277,0.884625,0.8843041297934231,8000,1,fashion-MNIST\angle\best_Angle.pth
+fashion,angle,123,validation_accuracy,0.8895,0.88025,0.8803695749710797,0.88025,0.8797366306702086,8000,1,fashion-MNIST\angle\best_Angle_fmnist_model_seed_123.pth
+fashion,angle,456,validation_accuracy,0.8945,0.88025,0.8821216211186789,0.88025,0.8806047046240684,8000,1,fashion-MNIST\angle\best_Angle_fmnist_model_seed_456.pth
+fashion,iqp-all,42,best_validation_accuracy,0.8835,0.8685,0.8690569439956983,0.8685,0.865005910814566,8000,1,paper_analysis\results\iqp_all\fashion\seed_42\best_validation_model.pth
+fashion,iqp-all,123,best_validation_accuracy,0.8795,0.867875,0.8678520572988755,0.867875,0.8673894464843206,8000,1,paper_analysis\results\iqp_all\fashion\seed_123\best_validation_model.pth
+fashion,iqp-all,456,best_validation_accuracy,0.8895,0.8725,0.8745207405508748,0.8725,0.872921725935563,8000,1,paper_analysis\results\iqp_all\fashion\seed_456\best_validation_model.pth
+fashion,basis-ste,42,best_validation_accuracy,0.6145,0.61575,0.6651413459775205,0.61575,0.6029144139963123,8000,1,paper_analysis\results\basis_ste\fashion\seed_42\best_validation_model.pth
+fashion,basis-ste,123,best_validation_accuracy,0.5145,0.515,0.4988000763907339,0.515,0.4935279976113411,8000,1,paper_analysis\results\basis_ste\fashion\seed_123\best_validation_model.pth
+fashion,basis-ste,456,best_validation_accuracy,0.6655,0.665125,0.668361996916115,0.665125,0.6525957528533055,8000,1,paper_analysis\results\basis_ste\fashion\seed_456\best_validation_model.pth
+fashion,iqp-nn,42,best_validation_accuracy,0.885,0.869375,0.8697574274526062,0.869375,0.8693572777232814,8000,1,paper_analysis\results\iqp_nn_control\fashion\seed_42\best_validation_model.pth
+fashion,iqp-nn,123,best_validation_accuracy,0.8835,0.876875,0.877992504057546,0.876875,0.8768918216662103,8000,1,paper_analysis\results\iqp_nn_control\fashion\seed_123\best_validation_model.pth
+fashion,iqp-nn,456,best_validation_accuracy,0.8875,0.871125,0.8711734431752634,0.871125,0.8701990546232543,8000,1,paper_analysis\results\iqp_nn_control\fashion\seed_456\best_validation_model.pth
+fashion,basis-hard,42,validation_accuracy,0.329,0.326625,0.3376556125519629,0.326625,0.29028413851218565,8000,1,fashion-MNIST\basis\best_Basis.pth
+fashion,basis-hard,123,validation_accuracy,0.3965,0.400375,0.37697136265020903,0.400375,0.36331840928298487,8000,1,fashion-MNIST\basis\best_Basis_fmnist_model_seed_123.pth
+fashion,basis-hard,456,validation_accuracy,0.3055,0.320125,0.32467589416741516,0.320125,0.2899489629840901,8000,1,fashion-MNIST\basis\best_Basis_fmnist_model_seed_456.pth
+fashion,classiccnn,42,validation_accuracy,0.896,0.876,0.8759910677994276,0.876,0.8733506892669756,8000,1,CNN\best_ClassicCNN_fashion_seed_42.pth
+fashion,classiccnn,123,validation_accuracy,0.8965,0.884125,0.8853447973670386,0.884125,0.8844373913927273,8000,1,CNN\best_ClassicCNN_fashion_seed_123.pth
+fashion,classiccnn,456,validation_accuracy,0.905,0.882125,0.8819498560665507,0.882125,0.8817357665344495,8000,1,CNN\best_ClassicCNN_fashion_seed_456.pth
+fashion,mlp-16,42,validation_accuracy,0.893,0.882375,0.881987963852107,0.882375,0.8818728575529365,8000,1,paper_analysis\results\baselines_validation_selected\fashion\bottleneck_16\seed_42\best_validation_model.pth
+fashion,mlp-16,123,validation_accuracy,0.8915,0.87475,0.8771821019137415,0.87475,0.8751707624019426,8000,1,paper_analysis\results\baselines_validation_selected\fashion\bottleneck_16\seed_123\best_validation_model.pth
+fashion,mlp-16,456,validation_accuracy,0.8965,0.88025,0.8799421139223986,0.88025,0.8796606374510243,8000,1,paper_analysis\results\baselines_validation_selected\fashion\bottleneck_16\seed_456\best_validation_model.pth
+fashion,mlp-64,42,validation_accuracy,0.889,0.879375,0.8797258951208465,0.879375,0.8790226789612386,8000,1,paper_analysis\results\baselines_validation_selected\fashion\bottleneck_64\seed_42\best_validation_model.pth
+fashion,mlp-64,123,validation_accuracy,0.8975,0.882375,0.8812355407738542,0.882375,0.8814602798519415,8000,1,paper_analysis\results\baselines_validation_selected\fashion\bottleneck_64\seed_123\best_validation_model.pth
+fashion,mlp-64,456,validation_accuracy,0.8945,0.883125,0.882416283222516,0.883125,0.8816485783437593,8000,1,paper_analysis\results\baselines_validation_selected\fashion\bottleneck_64\seed_456\best_validation_model.pth
+mnist,amplitude,42,validation_accuracy,0.9775,0.982,0.9820024813233598,0.982,0.9819818999596531,8000,1,Amplitude encoding\best_Amplitude_model.pth
+mnist,amplitude,123,validation_accuracy,0.975,0.98375,0.9837673415917139,0.98375,0.9837432573846687,8000,1,Amplitude encoding\best_Amplitude_model_seed_123.pth
+mnist,amplitude,456,validation_accuracy,0.9725,0.982125,0.982176682559094,0.982125,0.9821054883424568,8000,1,Amplitude encoding\best_Amplitude_model_seed_456.pth
+mnist,angle,42,validation_accuracy,0.959,0.97525,0.9752900624460198,0.97525,0.975250040354645,8000,1,angle encoding\best_Angle_model.pth
+mnist,angle,123,validation_accuracy,0.9705,0.979,0.979087834503297,0.979,0.9789964598056305,8000,1,angle encoding\best_Angle_model_seed_123.pth
+mnist,angle,456,validation_accuracy,0.961,0.9745,0.9745303725096562,0.9745,0.9744877790773275,8000,1,angle encoding\best_Angle_model_seed_456.pth
+mnist,iqp-all,42,best_validation_accuracy,0.966,0.9755,0.9756770219036631,0.9755,0.9755087046880427,8000,1,paper_analysis\results\iqp_all\mnist\seed_42\best_validation_model.pth
+mnist,iqp-all,123,best_validation_accuracy,0.9685,0.97825,0.9784172503187137,0.97825,0.9782681525370092,8000,1,paper_analysis\results\iqp_all\mnist\seed_123\best_validation_model.pth
+mnist,iqp-all,456,best_validation_accuracy,0.962,0.97275,0.9727342713886885,0.97275,0.9727164500798118,8000,1,paper_analysis\results\iqp_all\mnist\seed_456\best_validation_model.pth
+mnist,basis-ste,42,best_validation_accuracy,0.5805,0.585125,0.6649014094971204,0.585125,0.5700155931153164,8000,1,paper_analysis\results\basis_ste\mnist\seed_42\best_validation_model.pth
+mnist,basis-ste,123,best_validation_accuracy,0.3965,0.402125,0.3652588122423347,0.402125,0.334801140595276,8000,1,paper_analysis\results\basis_ste\mnist\seed_123\best_validation_model.pth
+mnist,basis-ste,456,best_validation_accuracy,0.4875,0.517125,0.4902771857082403,0.517125,0.4865719105792888,8000,1,paper_analysis\results\basis_ste\mnist\seed_456\best_validation_model.pth
+mnist,iqp-nn,42,best_validation_accuracy,0.9615,0.975375,0.9754881843293858,0.975375,0.9753707305241833,8000,1,paper_analysis\results\iqp_nn_control\mnist\seed_42\best_validation_model.pth
+mnist,iqp-nn,123,best_validation_accuracy,0.9715,0.976125,0.9762610229140927,0.976125,0.9761207434029439,8000,1,paper_analysis\results\iqp_nn_control\mnist\seed_123\best_validation_model.pth
+mnist,iqp-nn,456,best_validation_accuracy,0.9675,0.9755,0.9756395820991433,0.9755,0.9754588475704662,8000,1,paper_analysis\results\iqp_nn_control\mnist\seed_456\best_validation_model.pth
+mnist,basis-hard,42,validation_accuracy,0.2945,0.3195,0.31352746400185333,0.3195,0.27658297071610843,8000,1,basis encoding\best_Basis_model.pth
+mnist,basis-hard,123,validation_accuracy,0.28,0.302,0.27368808614635826,0.302,0.2659969201106378,8000,1,basis encoding\best_Basis_model_seed_123.pth
+mnist,basis-hard,456,validation_accuracy,0.2215,0.269875,0.27137310992058333,0.269875,0.2197666397981806,8000,1,basis encoding\best_Basis_model_seed_456.pth
+mnist,classiccnn,42,validation_accuracy,0.9715,0.97925,0.9793774235055005,0.97925,0.9792223164502473,8000,1,CNN\best_ClassicCNN_mnist_seed_42.pth
+mnist,classiccnn,123,validation_accuracy,0.974,0.98,0.9801644922133467,0.98,0.9799811469636818,8000,1,CNN\best_ClassicCNN_mnist_seed_123.pth
+mnist,classiccnn,456,validation_accuracy,0.9775,0.981625,0.9817329510386567,0.981625,0.9816112103843512,8000,1,CNN\best_ClassicCNN_mnist_seed_456.pth
+mnist,mlp-16,42,validation_accuracy,0.971,0.980375,0.9805633003065766,0.980375,0.9803915524575971,8000,1,paper_analysis\results\baselines_validation_selected\mnist\bottleneck_16\seed_42\best_validation_model.pth
+mnist,mlp-16,123,validation_accuracy,0.969,0.979375,0.9794218164295587,0.979375,0.9793676772690524,8000,1,paper_analysis\results\baselines_validation_selected\mnist\bottleneck_16\seed_123\best_validation_model.pth
+mnist,mlp-16,456,validation_accuracy,0.9715,0.978875,0.9790461670892853,0.978875,0.9788906930432981,8000,1,paper_analysis\results\baselines_validation_selected\mnist\bottleneck_16\seed_456\best_validation_model.pth
+mnist,mlp-64,42,validation_accuracy,0.975,0.97925,0.9794404741869945,0.97925,0.9792198104066073,8000,1,paper_analysis\results\baselines_validation_selected\mnist\bottleneck_64\seed_42\best_validation_model.pth
+mnist,mlp-64,123,validation_accuracy,0.9765,0.98225,0.9823436506286884,0.98225,0.9822386524474737,8000,1,paper_analysis\results\baselines_validation_selected\mnist\bottleneck_64\seed_123\best_validation_model.pth
+mnist,mlp-64,456,validation_accuracy,0.9795,0.982125,0.9822094282648622,0.982125,0.9821220573275082,8000,1,paper_analysis\results\baselines_validation_selected\mnist\bottleneck_64\seed_456\best_validation_model.pth
