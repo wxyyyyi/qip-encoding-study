@@ -13,16 +13,18 @@
 - [x] Remove non-standalone legacy scripts and unverified checkpoint binaries from the public candidate.
 - [x] Run all standardized entry points in a clean Python 3.12 CPU environment and verify both dataset loaders.
 - [x] Create the private GitHub staging repository and push the reviewed `main` branch.
+- [x] Replace the public commit identity with the GitHub noreply email.
+- [x] License repository-authored contents under the MIT License.
+- [x] Record the verified GitHub repository URL in both READMEs and `CITATION.cff`.
 
 ## Author decisions required before public release
 
 - [ ] Confirm author names, order, affiliations, email addresses, and any ORCID identifiers.
-- [ ] Choose a software license with all rights holders or the institution.
 - [ ] Decide whether a later release should redistribute verified checkpoints; the initial public candidate omits them.
 - [ ] Create a public GitHub repository and a fixed release tag, preferably `v1.0.0`.
 - [ ] Archive that exact release in Zenodo or another trusted repository and obtain a DOI.
 - [ ] Test the DOI and repository while logged out.
-- [ ] Add the real repository URL/DOI to `CITATION.cff`, both READMEs, and the manuscript.
+- [ ] Add the final archival DOI to `CITATION.cff`, both READMEs, and the manuscript.
 - [ ] Keep Data availability and Code availability synchronized with the files actually released.
 
 ## Final verification after any change

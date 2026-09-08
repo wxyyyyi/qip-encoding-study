@@ -2,7 +2,7 @@
 
 这是论文《Quantum Data Encoding Trade-offs in Parallel Hybrid Image Classification》的本地发布候选包。它包含规范化训练入口、处理后结果、主要图以及固定数据划分协议。
 
-该包已托管在私有 GitHub 仓库 [wxyyyyi/qip-encoding-study](https://github.com/wxyyyyi/qip-encoding-study)，用于完成最终发布审核；目前还不是公开或已归档的正式记录。归档 DOI 和软件许可仍须由作者在投稿前补全。未经统一加载验证的旧 checkpoint 不进入公开候选包。
+该包已托管在私有 GitHub 仓库 [wxyyyyi/qip-encoding-study](https://github.com/wxyyyyi/qip-encoding-study)，用于完成最终发布审核；目前还不是公开或已归档的正式记录。仓库原创内容采用 MIT License；投稿前仍须取得归档 DOI。未经统一加载验证的旧 checkpoint 不进入公开候选包。
 
 ## 可复现范围
 
@@ -22,6 +22,7 @@
 - `code/analysis/quantum_resource_analysis.py`：可独立运行的量子资源统计；
 - `code/validation/`：发布包自检、校验和生成及 Amplitude 输入梯度检查；
 - `CODE_AUDIT.md`：公开代码审计、修正和验收记录；
+- `LICENSE`：仓库原创内容适用的 MIT 许可条款；
 - `results/`：稿件所用的处理后 CSV、JSON、Markdown 和结果图；
 - `figures/`：主要论文图的副本；
 - `checkpoints/README.md`：说明为何公开候选包未包含旧权重；
@@ -36,7 +37,7 @@ python code/validation/generate_sha256_manifest.py
 python code/validation/validate_release.py
 ```
 
-第一条命令只使用 Python 标准库，不安装科研依赖也能运行。在作者作出决定前，缺少软件许可的 warning 属于预期状态；归档 DOI 仍是后续正式发布任务。
+第一条命令只使用 Python 标准库，不安装科研依赖也能运行。归档 DOI 仍是后续正式发布任务，但不作为本地完整性检查失败项。
 
 ## Smoke test
 
@@ -67,6 +68,6 @@ python code/experiments/classical_bottleneck_baseline.py --data-root path/to/dat
 
 ## 投稿前发布
 
-作者需要选择软件许可、将审核后的仓库设为公开、建立带版本的 release，并把该 release 归档到 Zenodo 或其他可信仓库。取得 DOI 后，应把同一永久地址同步写入稿件的 Data availability、Code availability 和本 README。`CITATION.cff` 已记录经确认的源代码仓库 URL，但在真实 DOI 生成前不会填写 DOI。
+作者需要将审核后的仓库设为公开、建立带版本的 release，并把该 release 归档到 Zenodo 或其他可信仓库。取得 DOI 后，应把同一永久地址同步写入稿件的 Data availability、Code availability 和本 README。`CITATION.cff` 已记录经确认的源代码仓库 URL 和 MIT License，但在真实 DOI 生成前不会填写 DOI。
 
-本仓库目前尚未授予软件许可；未来选择的代码许可也不会改变 MNIST、Fashion-MNIST 及第三方依赖各自的许可。
+仓库原创内容采用 MIT License。MNIST、Fashion-MNIST 及所有第三方依赖仍遵循各自的许可和引用要求；本仓库不再分发其原始数据或源代码。

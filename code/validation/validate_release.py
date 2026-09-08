@@ -14,6 +14,7 @@ REQUIRED = (
     "README.md",
     "README_zh.md",
     "CITATION.cff",
+    "LICENSE",
     "REPRODUCIBILITY_CHECKLIST.md",
     "configs/protocol.md",
     "data/README.md",
@@ -222,8 +223,15 @@ def check_release_decisions(report):
         report.warn("Persistent repository URL/DOI is still unresolved")
     if "repository-code:" not in citation:
         report.warn("CITATION.cff intentionally has no repository URL before publication")
-    if not any((ROOT / name).is_file() for name in ("LICENSE", "LICENSE.txt", "LICENSE.md")):
+    license_path = ROOT / "LICENSE"
+    if not license_path.is_file():
         report.warn("Software license has not been selected by the authors")
+    else:
+        license_text = license_path.read_text(encoding="utf-8")
+        if "MIT License" not in license_text or "license: MIT" not in citation:
+            report.fail("LICENSE and CITATION.cff do not consistently declare the MIT License")
+        else:
+            report.ok("MIT License and citation metadata agree")
     checkpoint_files = list(ROOT.rglob("*.pth"))
     if checkpoint_files:
         report.fail(

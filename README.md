@@ -2,7 +2,7 @@
 
 This is the local release candidate for the manuscript *Quantum Data Encoding Trade-offs in Parallel Hybrid Image Classification*. It contains standardized training entry points, processed results, figures, and the fixed data-split protocol.
 
-The package is hosted in the private GitHub repository [wxyyyyi/qip-encoding-study](https://github.com/wxyyyyi/qip-encoding-study) while final release decisions are completed. It is not yet a public or archived record. Its archival DOI and software license must be supplied by the authors before submission. Unverified legacy checkpoints are excluded from the public candidate.
+The package is hosted in the private GitHub repository [wxyyyyi/qip-encoding-study](https://github.com/wxyyyyi/qip-encoding-study) while final release decisions are completed. It is not yet a public or archived record. The repository-authored contents are available under the MIT License; an archival DOI must still be obtained before submission. Unverified legacy checkpoints are excluded from the public candidate.
 
 ## Reproducibility scope
 
@@ -22,6 +22,7 @@ The processed result tables are the manuscript-facing publication records. Histo
 - `code/analysis/quantum_resource_analysis.py`: standalone circuit resource accounting.
 - `code/validation/`: release checks, checksum generation, and the Amplitude input-gradient audit.
 - `CODE_AUDIT.md`: public-code findings, corrections, and acceptance evidence.
+- `LICENSE`: MIT terms for repository-authored contents.
 - `results/`: processed CSV, JSON, Markdown, and manuscript result figures.
 - `figures/`: copies of the principal manuscript figures.
 - `checkpoints/README.md`: explains why unverified legacy weights are not part of this candidate.
@@ -42,7 +43,7 @@ python code/validation/generate_sha256_manifest.py
 python code/validation/validate_release.py
 ```
 
-The first command uses only the Python standard library. It can therefore validate the package before scientific dependencies are installed. A warning about the missing software license is expected until the authors make and record that decision; the archival DOI remains a documented release task.
+The first command uses only the Python standard library. It can therefore validate the package before scientific dependencies are installed. The archival DOI remains a documented release task and is not treated as a local-integrity failure.
 
 ## Standardized smoke tests
 
@@ -75,6 +76,6 @@ The evidence supports an architecture-specific, resource-aware comparison of enc
 
 ## Public release and citation
 
-Before publication, the authors must choose a software license, make the reviewed repository public, create a versioned release, archive that exact release in Zenodo or another trusted repository, and insert the resulting permanent DOI into the manuscript and this README. `CITATION.cff` records the verified source-repository URL but intentionally omits a DOI until one exists.
+Before publication, the authors must make the reviewed repository public, create a versioned release, archive that exact release in Zenodo or another trusted repository, and insert the resulting permanent DOI into the manuscript and this README. `CITATION.cff` records the verified source-repository URL and MIT license but intentionally omits a DOI until one exists.
 
-No software license has yet been granted. The MNIST and Fashion-MNIST licenses and citations remain independent of any license later selected for this repository.
+Repository-authored contents are licensed under the MIT License. MNIST, Fashion-MNIST, and all third-party dependencies retain their own licenses and citation requirements; their raw data and source code are not redistributed here.
