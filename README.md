@@ -1,8 +1,8 @@
 # Reproducibility package for Quantum Data Encoding Trade-offs
 
-This is the local release candidate for the manuscript *Quantum Data Encoding Trade-offs in Parallel Hybrid Image Classification*. It contains standardized training entry points, processed results, figures, and the fixed data-split protocol.
+This is the public reproducibility repository for the manuscript *Quantum Data Encoding Trade-offs in Parallel Hybrid Image Classification*. It contains standardized training entry points, processed results, figures, and the fixed data-split protocol.
 
-The package is hosted in the private GitHub repository [wxyyyyi/qip-encoding-study](https://github.com/wxyyyyi/qip-encoding-study) while final release decisions are completed. It is not yet a public or archived record. The repository-authored contents are available under the MIT License; an archival DOI must still be obtained before submission. Unverified legacy checkpoints are excluded from the public candidate.
+The reviewed package is publicly available at [wxyyyyi/qip-encoding-study](https://github.com/wxyyyyi/qip-encoding-study), and the repository has been enabled in Zenodo's GitHub integration. A versioned archival DOI has not yet been issued. Repository-authored contents are available under the MIT License. Unverified legacy checkpoints are excluded from the initial public release.
 
 ## Reproducibility scope
 
@@ -43,7 +43,7 @@ python code/validation/generate_sha256_manifest.py
 python code/validation/validate_release.py
 ```
 
-The first command uses only the Python standard library. It can therefore validate the package before scientific dependencies are installed. SHA256 values normalize text-file CRLF line endings to LF so the manifest is stable across Windows and Linux; binary files are hashed byte for byte. The archival DOI remains a documented release task and is not treated as a local-integrity failure.
+The first command uses only the Python standard library. It can therefore validate the package before scientific dependencies are installed. SHA256 values normalize text-file CRLF line endings to LF so the manifest is stable across Windows and Linux; binary files are hashed byte for byte. The pending archival DOI is a documented release task and is not treated as a local-integrity failure.
 
 ## Standardized smoke tests
 
@@ -74,8 +74,8 @@ These scripts are standardized rerun entry points reconstructed from the fixed p
 
 The evidence supports an architecture-specific, resource-aware comparison of encoding pipelines. It does not establish quantum advantage, hardware robustness, a universal encoding ranking, or a causal effect attributable to the straight-through estimator alone.
 
-## Public release and citation
+## Release and citation
 
-Before publication, the authors must make the reviewed repository public, create a versioned release, archive that exact release in Zenodo or another trusted repository, and insert the resulting permanent DOI into the manuscript and this README. `CITATION.cff` records the verified source-repository URL and MIT license but intentionally omits a DOI until one exists.
+The reviewed repository is public and enabled in Zenodo. The remaining release steps are to create the fixed `v1.0.0` release, allow Zenodo to archive that exact release, verify the resulting DOI, and then insert the permanent DOI into the manuscript, both READMEs, and `CITATION.cff`. No DOI is stated before Zenodo issues and resolves it.
 
 Repository-authored contents are licensed under the MIT License. MNIST, Fashion-MNIST, and all third-party dependencies retain their own licenses and citation requirements; their raw data and source code are not redistributed here.

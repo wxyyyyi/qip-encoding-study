@@ -1,6 +1,6 @@
 # 上传到 GitHub 和 Zenodo 的具体步骤
 
-本文件针对第一次建立代码仓库的情况。当前发布包仍在本地，以下步骤需要你在自己的 GitHub 账户中完成。
+本文件记录从本地发布包到永久归档的完整流程。截至 2026-09-08，GitHub 仓库已经公开，Zenodo 的 GitHub 集成已经启用；当前从创建 `v1.0.0` release 继续。
 
 ## 方案 A：GitHub Desktop（推荐）
 
@@ -18,8 +18,8 @@
 1. 用 GitHub 账号登录 [Zenodo](https://zenodo.org/)。
 2. 在 Zenodo 的 GitHub 集成设置中开启目标仓库。
 3. 在 GitHub 仓库中创建并推送一个 release，例如 `v1.0.0`。
-4. Zenodo 会自动归档该 release。检查标题、作者、摘要、许可协议和文件清单。
-5. 发布 Zenodo record，复制 DOI landing page URL 和 DOI。
+4. 等待 Zenodo 自动归档该 release，并检查记录中的标题、作者、摘要、许可协议和文件清单。
+5. Zenodo 完成归档后，复制 DOI landing page URL 和 DOI。
 6. 只有在 DOI 已经可以从无登录浏览器打开后，才把 DOI 写入论文。
 
 ## 投稿前要同步的四处内容

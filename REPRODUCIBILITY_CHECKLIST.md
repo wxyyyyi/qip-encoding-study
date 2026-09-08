@@ -12,16 +12,18 @@
 - [x] Separate smoke/full and IQP topology output directories and test metadata reuse.
 - [x] Remove non-standalone legacy scripts and unverified checkpoint binaries from the public candidate.
 - [x] Run all standardized entry points in a clean Python 3.12 CPU environment and verify both dataset loaders.
-- [x] Create the private GitHub staging repository and push the reviewed `main` branch.
+- [x] Create the GitHub staging repository and push the reviewed `main` branch.
 - [x] Replace the public commit identity with the GitHub noreply email.
 - [x] License repository-authored contents under the MIT License.
 - [x] Record the verified GitHub repository URL in both READMEs and `CITATION.cff`.
+- [x] Make the reviewed repository public.
+- [x] Enable the repository in Zenodo's GitHub integration.
+- [x] Confirm that the initial release omits unverified legacy checkpoints.
 
-## Author decisions required before public release
+## Required before the versioned archive
 
 - [ ] Confirm author names, order, affiliations, email addresses, and any ORCID identifiers.
-- [ ] Decide whether a later release should redistribute verified checkpoints; the initial public candidate omits them.
-- [ ] Create a public GitHub repository and a fixed release tag, preferably `v1.0.0`.
+- [ ] Create and push the fixed `v1.0.0` release tag.
 - [ ] Archive that exact release in Zenodo or another trusted repository and obtain a DOI.
 - [ ] Test the DOI and repository while logged out.
 - [ ] Add the final archival DOI to `CITATION.cff`, both READMEs, and the manuscript.
