@@ -1,6 +1,6 @@
 # 上传到 GitHub 和 Zenodo 的具体步骤
 
-本文件记录从本地发布包到永久归档的完整流程。截至 2026-09-08，GitHub 仓库已经公开，Zenodo 的 GitHub 集成已经启用；当前从创建 `v1.0.0` release 继续。
+本文件记录从本地发布包到永久归档的完整流程。截至 2026-09-08，GitHub 仓库已经公开，`v1.0.0` 已由 Zenodo 永久归档，版本 DOI 为 `10.5281/zenodo.22658398`。
 
 ## 方案 A：GitHub Desktop（推荐）
 
@@ -36,10 +36,10 @@
 
 ```text
 Data availability
-MNIST and Fashion-MNIST are publicly available through torchvision and are described in the repository data README. The repository at [PERMANENT DOI OR URL] contains the deterministic split specification, processed result tables and analysis outputs supporting this study.
+MNIST and Fashion-MNIST are publicly available through torchvision. No new primary image dataset was generated in this study, and the third-party raw datasets are not redistributed. The deterministic split specification, processed result tables, per-run metrics and analysis outputs supporting the reported tables and figures are openly available in the versioned Zenodo record at https://doi.org/10.5281/zenodo.22658398.
 
 Code availability
-Source code, experimental configurations, processed result tables, training logs and figures are available at [PERMANENT DOI OR URL].
+Source code, experimental configurations, dependency specifications, validation tools, processed publication records and figures are openly available in the versioned Zenodo record at https://doi.org/10.5281/zenodo.22658398. The archived release excludes raw datasets and unverified legacy model checkpoints.
 ```
 
 当前候选包不公开 checkpoint，论文声明不能声称包含 selected checkpoints。若以后决定公开，须先完成逐文件加载验证并建立 model/dataset/seed 清单，再创建新版本。

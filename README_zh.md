@@ -1,8 +1,10 @@
 # QIP Encoding Study 可复现发布包
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22658398.svg)](https://doi.org/10.5281/zenodo.22658398)
+
 这是论文《Quantum Data Encoding Trade-offs in Parallel Hybrid Image Classification》的公开可复现仓库。它包含规范化训练入口、处理后结果、主要图以及固定数据划分协议。
 
-审核后的发布包已公开托管在 [wxyyyyi/qip-encoding-study](https://github.com/wxyyyyi/qip-encoding-study)，并已在 Zenodo 的 GitHub 集成中启用；目前尚未生成带版本的归档 DOI。仓库原创内容采用 MIT License。未经统一加载验证的旧 checkpoint 不进入首个公开版本。
+审核后的发布包已公开托管在 [wxyyyyi/qip-encoding-study](https://github.com/wxyyyyi/qip-encoding-study)。固定的 `v1.0.0` release 已永久归档到 Zenodo：[https://doi.org/10.5281/zenodo.22658398](https://doi.org/10.5281/zenodo.22658398)。仓库原创内容采用 MIT License。未经统一加载验证的旧 checkpoint 不进入首个公开版本。
 
 ## 可复现范围
 
@@ -37,7 +39,7 @@ python code/validation/generate_sha256_manifest.py
 python code/validation/validate_release.py
 ```
 
-第一条命令只使用 Python 标准库，不安装科研依赖也能运行。为保证 Windows 与 Linux 结果一致，SHA256 对文本文件先将 CRLF 换行规范为 LF，二进制文件仍逐字节计算。尚未生成的归档 DOI 是后续正式发布任务，但不作为本地完整性检查失败项。
+第一条命令只使用 Python 标准库，不安装科研依赖也能运行。为保证 Windows 与 Linux 结果一致，SHA256 对文本文件先将 CRLF 换行规范为 LF，二进制文件仍逐字节计算。
 
 ## Smoke test
 
@@ -68,6 +70,6 @@ python code/experiments/classical_bottleneck_baseline.py --data-root path/to/dat
 
 ## 发布与引用
 
-审核后的仓库已经公开并在 Zenodo 中启用。剩余步骤是创建固定的 `v1.0.0` release，由 Zenodo 归档该版本，验证生成的 DOI，然后把同一永久地址同步写入稿件、两份 README 和 `CITATION.cff`。在 Zenodo 实际生成且 DOI 可以解析前，不填写任何 DOI。
+引用或复现本研究时，请使用固定的 `v1.0.0` Zenodo 记录：[https://doi.org/10.5281/zenodo.22658398](https://doi.org/10.5281/zenodo.22658398)。该 DOI 对应论文使用的精确 GitHub release；后续变更应发布新版本，不覆盖已经归档的记录。
 
 仓库原创内容采用 MIT License。MNIST、Fashion-MNIST 及所有第三方依赖仍遵循各自的许可和引用要求；本仓库不再分发其原始数据或源代码。

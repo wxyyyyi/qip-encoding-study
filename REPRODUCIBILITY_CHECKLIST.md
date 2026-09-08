@@ -26,10 +26,10 @@
 ## Versioned archive and DOI follow-up
 
 - [x] Create and push the fixed `v1.0.0` release tag.
-- [ ] Archive that exact release in Zenodo or another trusted repository and obtain a DOI.
-- [ ] Test the DOI and repository while logged out.
-- [ ] Add the final archival DOI to `CITATION.cff`, both READMEs, and the manuscript.
-- [ ] Keep Data availability and Code availability synchronized with the files actually released.
+- [x] Archive that exact release in Zenodo and obtain DOI `10.5281/zenodo.22658398`.
+- [x] Test the public DOI record, repository, and archived download without Zenodo account credentials.
+- [x] Add the final archival DOI to `CITATION.cff`, both READMEs, and the manuscript.
+- [x] Keep Data availability and Code availability synchronized with the files actually released.
 
 ## Verification required after future changes
 

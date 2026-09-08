@@ -4,8 +4,10 @@ version: 1.0.0
 date-released: 2026-09-08
 type: software
 license: MIT
-message: "Please cite the versioned archival release once its DOI is available."
+doi: "10.5281/zenodo.22658398"
+message: "Please cite this fixed versioned archival release."
 repository-code: "https://github.com/wxyyyyi/qip-encoding-study"
+repository-artifact: "https://doi.org/10.5281/zenodo.22658398"
 authors:
   - family-names: Wen
     given-names: Jun-Yu

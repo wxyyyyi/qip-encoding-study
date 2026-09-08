@@ -1,8 +1,10 @@
 # Reproducibility package for Quantum Data Encoding Trade-offs
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22658398.svg)](https://doi.org/10.5281/zenodo.22658398)
+
 This is the public reproducibility repository for the manuscript *Quantum Data Encoding Trade-offs in Parallel Hybrid Image Classification*. It contains standardized training entry points, processed results, figures, and the fixed data-split protocol.
 
-The reviewed package is publicly available at [wxyyyyi/qip-encoding-study](https://github.com/wxyyyyi/qip-encoding-study), and the repository has been enabled in Zenodo's GitHub integration. A versioned archival DOI has not yet been issued. Repository-authored contents are available under the MIT License. Unverified legacy checkpoints are excluded from the initial public release.
+The reviewed package is publicly available at [wxyyyyi/qip-encoding-study](https://github.com/wxyyyyi/qip-encoding-study). The fixed `v1.0.0` release is permanently archived in Zenodo at [https://doi.org/10.5281/zenodo.22658398](https://doi.org/10.5281/zenodo.22658398). Repository-authored contents are available under the MIT License. Unverified legacy checkpoints are excluded from the initial public release.
 
 ## Reproducibility scope
 
@@ -43,7 +45,7 @@ python code/validation/generate_sha256_manifest.py
 python code/validation/validate_release.py
 ```
 
-The first command uses only the Python standard library. It can therefore validate the package before scientific dependencies are installed. SHA256 values normalize text-file CRLF line endings to LF so the manifest is stable across Windows and Linux; binary files are hashed byte for byte. The pending archival DOI is a documented release task and is not treated as a local-integrity failure.
+The first command uses only the Python standard library. It can therefore validate the package before scientific dependencies are installed. SHA256 values normalize text-file CRLF line endings to LF so the manifest is stable across Windows and Linux; binary files are hashed byte for byte.
 
 ## Standardized smoke tests
 
@@ -76,6 +78,6 @@ The evidence supports an architecture-specific, resource-aware comparison of enc
 
 ## Release and citation
 
-The reviewed repository is public and enabled in Zenodo. The remaining release steps are to create the fixed `v1.0.0` release, allow Zenodo to archive that exact release, verify the resulting DOI, and then insert the permanent DOI into the manuscript, both READMEs, and `CITATION.cff`. No DOI is stated before Zenodo issues and resolves it.
+For citation and reproduction, use the fixed `v1.0.0` Zenodo record at [https://doi.org/10.5281/zenodo.22658398](https://doi.org/10.5281/zenodo.22658398). The DOI identifies the exact GitHub release used for the manuscript. Changes after this release should be published as a new version rather than altering the archived record.
 
 Repository-authored contents are licensed under the MIT License. MNIST, Fashion-MNIST, and all third-party dependencies retain their own licenses and citation requirements; their raw data and source code are not redistributed here.
