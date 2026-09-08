@@ -12,6 +12,7 @@
 - [x] Separate smoke/full and IQP topology output directories and test metadata reuse.
 - [x] Remove non-standalone legacy scripts and unverified checkpoint binaries from the public candidate.
 - [x] Run all standardized entry points in a clean Python 3.12 CPU environment and verify both dataset loaders.
+- [x] Create the private GitHub staging repository and push the reviewed `main` branch.
 
 ## Author decisions required before public release
 

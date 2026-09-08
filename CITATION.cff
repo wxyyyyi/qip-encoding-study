@@ -1,9 +1,8 @@
 cff-version: 1.2.0
 title: "Reproducibility package for Quantum Data Encoding Trade-offs in Parallel Hybrid Image Classification"
-version: 1.0.0
-date-released: 2026-09-08
+version: 0.1.0
 type: software
-message: "Please cite the associated manuscript and the archived repository release."
+message: "Once public, please cite the associated manuscript and archived repository release."
 repository-code: "https://github.com/wxyyyyi/qip-encoding-study"
 authors:
   - family-names: Wen
