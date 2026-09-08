@@ -1,0 +1,43 @@
+{
+  "title": "Reproducibility package for Quantum Data Encoding Trade-offs in Parallel Hybrid Image Classification",
+  "description": "Versioned code and processed-result package supporting the manuscript <i>Quantum Data Encoding Trade-offs in Parallel Hybrid Image Classification</i>. The repository provides standardized training and evaluation entry points for Amplitude, Angle, IQP-All, IQP-NN, and Basis-STE pipelines; classical bottleneck controls; processed publication records; principal figures; circuit-resource analysis; and the deterministic MNIST/Fashion-MNIST split protocol. The evidence is limited to the documented four-branch CNN-PQC scaffold and does not establish quantum advantage, hardware robustness, a universal encoding ranking, or a causal effect attributable to the straight-through estimator alone. Raw datasets and unverified legacy checkpoints are not redistributed.",
+  "creators": [
+    {
+      "name": "Wen, Jun-Yu",
+      "affiliation": "School of Information Engineering, Nanchang Hangkong University, Nanchang 330063, China"
+    },
+    {
+      "name": "Hu, Wen-Wen",
+      "affiliation": "School of Information Engineering, Nanchang Hangkong University, Nanchang 330063, China"
+    },
+    {
+      "name": "Jiang, She-Xiang",
+      "affiliation": "School of Computer Science and Engineering, Anhui University of Science and Technology, Huainan 232001, China"
+    },
+    {
+      "name": "Ye, Wei",
+      "affiliation": "School of Information Engineering, Nanchang Hangkong University, Nanchang 330063, China"
+    }
+  ],
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "MIT",
+  "version": "1.0.0",
+  "publication_date": "2026-09-08",
+  "language": "eng",
+  "keywords": [
+    "quantum machine learning",
+    "quantum data encoding",
+    "hybrid quantum-classical neural network",
+    "MNIST",
+    "Fashion-MNIST",
+    "reproducibility"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/wxyyyyi/qip-encoding-study",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

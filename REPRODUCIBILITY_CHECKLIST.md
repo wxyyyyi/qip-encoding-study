@@ -19,17 +19,19 @@
 - [x] Make the reviewed repository public.
 - [x] Enable the repository in Zenodo's GitHub integration.
 - [x] Confirm that the initial release omits unverified legacy checkpoints.
+- [x] Confirm author order, affiliations, corresponding author email, release date, and omission of unverified ORCID identifiers.
+- [x] Add version-aligned `CITATION.cff` and `.zenodo.json` metadata for `v1.0.0`.
+- [x] Regenerate `SHA256SUMS.txt` and complete the final local verification.
 
-## Required before the versioned archive
+## Versioned archive and DOI follow-up
 
-- [ ] Confirm author names, order, affiliations, email addresses, and any ORCID identifiers.
-- [ ] Create and push the fixed `v1.0.0` release tag.
+- [x] Create and push the fixed `v1.0.0` release tag.
 - [ ] Archive that exact release in Zenodo or another trusted repository and obtain a DOI.
 - [ ] Test the DOI and repository while logged out.
 - [ ] Add the final archival DOI to `CITATION.cff`, both READMEs, and the manuscript.
 - [ ] Keep Data availability and Code availability synchronized with the files actually released.
 
-## Final verification after any change
+## Verification required after future changes
 
 - [ ] Regenerate `SHA256SUMS.txt` with `python code/validation/generate_sha256_manifest.py`.
 - [ ] Run `python code/validation/validate_release.py` and resolve all failures.
