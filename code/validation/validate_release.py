@@ -41,6 +41,7 @@ EXPECTED_ACCURACY = {
 TEXT_SUFFIXES = {
     ".cff", ".csv", ".json", ".md", ".py", ".txt", ".yaml", ".yml"
 }
+TEXT_NAMES = {".gitattributes", ".gitignore", "LICENSE"}
 SECRET_PATTERNS = (
     re.compile(r"-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----"),
     re.compile(r"(?i)(?:api[_-]?key|secret|password)\s*[:=]\s*['\"][^'\"]{8,}"),
@@ -187,6 +188,9 @@ def check_main_results(report):
 
 def sha256(path):
     digest = hashlib.sha256()
+    if path.suffix.lower() in TEXT_SUFFIXES or path.name in TEXT_NAMES:
+        digest.update(path.read_bytes().replace(b"\r\n", b"\n"))
+        return digest.hexdigest()
     with path.open("rb") as handle:
         for block in iter(lambda: handle.read(1024 * 1024), b""):
             digest.update(block)

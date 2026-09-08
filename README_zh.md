@@ -37,7 +37,7 @@ python code/validation/generate_sha256_manifest.py
 python code/validation/validate_release.py
 ```
 
-第一条命令只使用 Python 标准库，不安装科研依赖也能运行。归档 DOI 仍是后续正式发布任务，但不作为本地完整性检查失败项。
+第一条命令只使用 Python 标准库，不安装科研依赖也能运行。为保证 Windows 与 Linux 结果一致，SHA256 对文本文件先将 CRLF 换行规范为 LF，二进制文件仍逐字节计算。归档 DOI 仍是后续正式发布任务，但不作为本地完整性检查失败项。
 
 ## Smoke test
 

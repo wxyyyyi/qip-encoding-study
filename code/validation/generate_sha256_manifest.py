@@ -10,10 +10,15 @@ ROOT = Path(__file__).resolve().parents[2]
 OUTPUT = ROOT / "SHA256SUMS.txt"
 EXCLUDED_PARTS = {".git", "__pycache__", "runs", "tmp"}
 EXCLUDED_SUFFIXES = {".pth"}
+TEXT_SUFFIXES = {".cff", ".csv", ".json", ".md", ".py", ".txt", ".yaml", ".yml"}
+TEXT_NAMES = {".gitattributes", ".gitignore", "LICENSE"}
 
 
 def sha256(path):
     digest = hashlib.sha256()
+    if path.suffix.lower() in TEXT_SUFFIXES or path.name in TEXT_NAMES:
+        digest.update(path.read_bytes().replace(b"\r\n", b"\n"))
+        return digest.hexdigest()
     with path.open("rb") as handle:
         for block in iter(lambda: handle.read(1024 * 1024), b""):
             digest.update(block)

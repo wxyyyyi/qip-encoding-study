@@ -43,7 +43,7 @@ python code/validation/generate_sha256_manifest.py
 python code/validation/validate_release.py
 ```
 
-The first command uses only the Python standard library. It can therefore validate the package before scientific dependencies are installed. The archival DOI remains a documented release task and is not treated as a local-integrity failure.
+The first command uses only the Python standard library. It can therefore validate the package before scientific dependencies are installed. SHA256 values normalize text-file CRLF line endings to LF so the manifest is stable across Windows and Linux; binary files are hashed byte for byte. The archival DOI remains a documented release task and is not treated as a local-integrity failure.
 
 ## Standardized smoke tests
 
